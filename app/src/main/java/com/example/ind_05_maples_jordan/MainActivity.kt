@@ -2,6 +2,7 @@ package com.example.ind_05_maples_jordan
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.ind_05_maples_jordan.State_Data.stateList
@@ -26,6 +27,7 @@ class MainActivity : AppCompatActivity(), ViewAdapter.OnItemClickListener {
     }
 
     override fun onItemClick(position: Int) {
+        Toast.makeText(this, stateList[position].stateName + " " + stateList[position].nickName, Toast.LENGTH_SHORT).show()
 
     }
 }
