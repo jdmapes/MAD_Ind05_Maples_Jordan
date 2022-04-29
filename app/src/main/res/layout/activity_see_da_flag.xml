@@ -4,6 +4,43 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_margin="4dp"
     tools:context=".SeeDaFlag">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/state_outline"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_below="@id/population"
+            android:layout_margin="25dp"
+            android:padding="10dp" />
+
+
+        <TextView
+            android:id="@+id/population"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:text="State Population"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/teal_200"/>
+
+        <ImageView
+            android:id="@+id/state_image"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_below="@id/state_outline"
+            android:layout_margin="25dp"
+            android:padding="10dp" />
+
+    </RelativeLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
